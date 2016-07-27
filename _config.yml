@@ -7,7 +7,7 @@ url: "http://qcao.us"
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 
 # Links
