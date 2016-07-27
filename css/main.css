@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  background: #ffe;
+  background: #dfe;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 100px auto 0;
   max-width: 400px;
@@ -25,7 +25,7 @@ body {
 }
 
 .container:before {
-  background: #ffe;
+  background: #dfe;
   box-shadow: 0 0 8px rgba(0,0,0,0.5);
   left: -5px;
   top: 4px;
@@ -33,7 +33,7 @@ body {
 }
 
 .container:after {
-  background: #ffe;
+  background: #dfe;
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   right: -3px;
   top: 1px;
@@ -42,7 +42,7 @@ body {
 
 /* links */
 a:link, a:visited, a:active, a:hover {
-  color: #C00;
+  color: #0C0;
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 a.page-link:hover {
-  border-bottom: 4px solid #C00;
+  border-bottom: 4px solid #0C0;
 }
 
 .navlist {
