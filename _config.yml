@@ -8,7 +8,7 @@ url: "http://qcao.us"
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
-paginate: 5
+paginate: 3
 
 # Links
 links:
