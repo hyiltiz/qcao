@@ -1,6 +1,6 @@
 body {
   font-family: monospace;
-  line-height:150%;
+  line-height:180%;
   margin: 80px 0px;
   background: url("../images/bg.png")
 }
@@ -49,6 +49,7 @@ a:link, a:visited, a:active, a:hover {
 /* menu */
 .page-link {
   font-weight: bold;
+  text-align: right;
 }
 
 a.page-link:hover {
@@ -57,6 +58,7 @@ a.page-link:hover {
 
 .navlist {
   padding: 0px 0px;
+  text-align: right;
 }
 
 .navlist > li {
