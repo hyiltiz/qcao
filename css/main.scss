@@ -6,7 +6,13 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+$base-font-family: 'Harmattan', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-cursive: 'Handlee', cursive;
+$font-family-display: 'Libre Baskerville', serif;
+$font-family-code: 'Inconsolata', monospace;
+
+
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
