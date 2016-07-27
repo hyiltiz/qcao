@@ -1,0 +1,51 @@
+#! /bin/bash
+# create post
+# by hyiltiz <hyiltiz AT gmail DOT com> 
+# Mon May 13 10:57:23 CST 2013
+# VERSION 0.1
+
+editor=${EDITOR:-vim}
+
+title=$(echo ${@} | sed 's/ /-/g')
+file="$(date "+%Y-%m-%d")-${title}.md"
+filename="_posts/${file}"
+dict="/usr/share/dict/words"
+
+if [ -f "${filename}" ]; then
+  # we already have the file
+  # just open it
+  echo "post found, now editing..."
+  ${editor} ${filename} ${dict}
+else
+  # create a new file with YAML Front Matter
+  # create post file
+  echo "Let's write something..."
+  touch ${filename}
+  git add ${filename}
+
+  # YAML Front Matter
+  echo "---"             >> ${filename} 
+  echo "layout: post"    >> ${filename}
+  echo "title: ${@}"     >> ${filename}
+  echo "categories:"     >> ${filename} 
+  echo " - Life"         >> ${filename} 
+  echo " - Software"     >> ${filename} 
+  echo " - Psysics"      >> ${filename} 
+  echo " - Psychology"   >> ${filename} 
+  echo "tags:"           >> ${filename} 
+  echo " - "             >> ${filename} 
+  echo " - "             >> ${filename} 
+  echo " - "             >> ${filename} 
+  echo "---"             >> ${filename} 
+  echo ""                >> ${filename} 
+
+
+  ${editor} ${filename} ${dict}
+fi
+
+echo ""
+echo "Now run the following if the post is ready to be *post*ed:"
+echo "git commit -a -m \"post: ${file}\""
+echo "git push"
+echo ""
+
