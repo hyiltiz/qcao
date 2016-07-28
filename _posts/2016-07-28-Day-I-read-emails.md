@@ -13,6 +13,15 @@ tags:
  - boyfriend
 ---
 
+i asked her for her favourite shots of clouds. The one she had was the
+one she took with me, which had too many buildings around. i showed her 
+several pictures from my collection, and she picked several. i tried to
+put up the clouds with helium ball as the website background. However,
+CSS renders it as repeated when zoomed out, and the edge of two repeated
+images were sharp. i tried applying Fourier filter, which damaged the
+whole image yet didn't reduce the edge as much. i used gradient linear
+filter later, which worked very well.
+
 All of a sudden, she told me that she didn't break up. i assured her
 that i did break up. i felt devastated; did our mutual friend told her
 about me how i felt that day? 
